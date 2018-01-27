@@ -22,7 +22,7 @@ Let's start with the following steps:
 
 ```rb
 source 'https://rubygems.org'
-ruby '2.3.0'
+ruby '2.3.3'
 
 gem 'sinatra', '>= 1.4'
 ```
@@ -127,7 +127,7 @@ You should now have the following files under version control: `Gemfile`, `Gemfi
 Modify the app
 --------------
 
-Modify `app.rb` so that instead of "Hello World" it prints "Goodbye World". Save your changes to `app.rb` and try refreshing your browser tab where the app is running.  
+Modify `app.rb` so that instead of "Hello World" it prints "Goodbye World". Save your changes to `app.rb` and try refreshing your browser tab where the app is running.
 
 No changes? Confused?
 
@@ -173,7 +173,7 @@ Earlier we saw that to run the app locally you run `rackup` to start the Rack ap
 web: bundle exec rackup config.ru -p $PORT
 ```
 
-This tells Heroku to start a single web worker (Dyno) using essentially the same command line you used to start Rack locally. Note that in some cases, a `Procfile` is not necessary since Heroku can infer from your files how to start the app. However, it's always better to be explicit.  
+This tells Heroku to start a single web worker (Dyno) using essentially the same command line you used to start Rack locally. Note that in some cases, a `Procfile` is not necessary since Heroku can infer from your files how to start the app. However, it's always better to be explicit.
 
 Your local Cloud9 repo is now ready to deploy to Heroku:
 
