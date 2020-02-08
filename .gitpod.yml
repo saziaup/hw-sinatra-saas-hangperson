@@ -1,2 +1,2 @@
-image: csadelaide/saasbook
-#  file: .gitpod.Dockerfile
+image: #csadelaide/saasbook
+  file: .gitpod.Dockerfile
