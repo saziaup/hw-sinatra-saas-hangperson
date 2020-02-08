@@ -22,4 +22,5 @@ group :development, :test do
   gem 'simplecov', '0.18.1'
   gem 'webmock', '1.21.0'
   gem 'ZenTest', '4.12.0'
+  gem 'autotest', '4.4.6'
 end
