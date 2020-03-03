@@ -40,15 +40,15 @@ attr_accessor :word , :guesses , :wrong_guesses, :displayed
     @displayed
   end
 
-  def check_win_or_lose
-    if (@wrong_guesses.length == 7)
-    :lose
-  elsif !@displayed.include?('-')
-    :win
-  else
-    :play
-  end
-end
+ def check_win_or_lose
+    if @wrong_guesses.length == 7
+      return :lose
+    end
+    if not word_with_guesses.include? "-"
+      return :win
+    end 
+    return :play
+    end
 
   # You can test it by running $ bundle exec irb -I. -r app.rb
   # And then in the irb: irb(main):001:0> HangpersonGame.get_random_word
