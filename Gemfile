@@ -19,7 +19,10 @@ group :development, :test do
   gem 'launchy', '2.4.3'
   gem 'rerun', '0.10.0'
 
-  gem 'simplecov', '0.10.0'
-  gem 'webmock', '1.21.0'
- gem 'ZenTest', '4.11.0'
+  gem 'simplecov', '0.18.1'
+  gem 'webmock', '3.8.1'
+  gem 'ZenTest', '4.12.0'
+
+  gem 'guard'
+  gem 'guard-rspec'
 end
