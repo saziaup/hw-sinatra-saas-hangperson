@@ -38,7 +38,7 @@ attr_accessor :word , :guesses , :wrong_guesses, :displayed
       end
     end
     @displayed
-  end
+end
 
  def check_win_or_lose
     if @wrong_guesses.length == 7
